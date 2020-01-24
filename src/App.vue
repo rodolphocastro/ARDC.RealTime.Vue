@@ -18,7 +18,7 @@ export default {
       "http://localhost/broadcastHub"
     );
 
-    connection.start().then(console.log("Connected"));
+    connection.start();
   }
 };
 </script>
