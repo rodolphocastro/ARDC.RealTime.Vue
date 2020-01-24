@@ -12,13 +12,6 @@ export default {
   name: "app",
   components: {
     HelloWorld
-  },
-  mounted() {
-    let connection = new this.$createNewSignalRConnection(
-      "http://localhost/broadcastHub"
-    );
-
-    connection.start();
   }
 };
 </script>
