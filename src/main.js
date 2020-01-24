@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import VueSignalR from "./plugins/vue-signalR";
+import '@fortawesome/fontawesome-free/css/all.min.css'
 import 'mini.css/dist/mini-default.min.css';
 
 Vue.config.productionTip = false
