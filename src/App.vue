@@ -7,7 +7,6 @@
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
-const signalR = require("@microsoft/signalr");
 
 export default {
   name: "app",
@@ -15,9 +14,9 @@ export default {
     HelloWorld
   },
   mounted() {
-    let connection = new signalR.HubConnectionBuilder()
-      .withUrl("http://localhost/broadcastHub")
-      .build();
+    let connection = new this.$createNewSignalRConnection(
+      "http://localhost/broadcastHub"
+    );
 
     connection.start().then(console.log("Connected"));
   }
