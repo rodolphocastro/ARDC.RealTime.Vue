@@ -10,14 +10,19 @@
     </header>
     <div class="container">
       <!-- TODO: Adicionar conteúdo do App -->
+      <broadcasts-section></broadcasts-section>
     </div>
   </div>
 </template>
 
 <script>
+import BroadcastsSection from "./components/BroadcastsSection";
+
 export default {
   name: "app",
-  components: {},
+  components: {
+    BroadcastsSection
+  },
   computed: {
     /**
      * Variáveis de ambiente do App.
