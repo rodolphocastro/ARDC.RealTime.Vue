@@ -3,6 +3,7 @@ import App from './App.vue'
 import VueSignalR from "./plugins/vue-signalR";
 import '@fortawesome/fontawesome-free/css/all.min.css'
 import 'mini.css/dist/mini-nord.min.css';
+import './registerServiceWorker'
 
 Vue.config.productionTip = false
 Vue.use(VueSignalR);
